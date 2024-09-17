@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Страница авто</title>
+
+  <!-- Libs styles -->
+  <link rel="stylesheet" href="libs/splide/splide.min.css?_v=20240917154248">
+  <link rel="stylesheet" href="libs/nouislider/nouislider.min.css?_v=20240917154248">
+  <!-- Main styles -->
+  <link rel="stylesheet" href="css/main-style.min.css?_v=20240917154248">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header-top">
+      <div class="container header-top__container">
+        <p class="header__contact">
+          <span class="icon header__contact-icon">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.00002 8.66671C9.10459 8.66671 10 7.77128 10 6.66671C10 5.56214 9.10459 4.66671 8.00002 4.66671C6.89545 4.66671 6.00002 5.56214 6.00002 6.66671C6.00002 7.77128 6.89545 8.66671 8.00002 8.66671Z"
+                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M8.00002 14.6667C10.6667 12 13.3334 9.61223 13.3334 6.66671C13.3334 3.72119 10.9455 1.33337 8.00002 1.33337C5.0545 1.33337 2.66669 3.72119 2.66669 6.66671C2.66669 9.61223 5.33335 12 8.00002 14.6667Z"
+                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </span>
+          Новосибирск, ул. Дунаевского, 25/1
+        </p>
+        <p class="header__contact">
+          <span class="icon header__contact-icon">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_8_354)">
+                <path
+                  d="M8 4.00004V8.00004L10.6667 9.33337M14.6667 8.00004C14.6667 11.6819 11.6819 14.6667 8 14.6667C4.3181 14.6667 1.33334 11.6819 1.33334 8.00004C1.33334 4.31814 4.3181 1.33337 8 1.33337C11.6819 1.33337 14.6667 4.31814 14.6667 8.00004Z"
+                  stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <defs>
+                <clipPath id="clip0_8_354">
+                  <rect width="16" height="16" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </span>
+          Ежедневно с 9:00 до 20:00
+        </p>
+      </div>
+    </div>
+    <div class="header-content">
+      <div class="container header-content__container">
+
+        <button type="button" class="nav__toggler" aria-expanded="true" aria-controls="header__nav">
+          <span class="icon nav__toggler-icon nav__toggler-icon--open">
+            <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 12H21M3 6H21M9 18H21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </span>
+          <span class="icon nav__toggler-icon nav__toggler-icon--close">
+            <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17 7L7 17M7 7L17 17" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </span>
+        </button>
+
+        <a href="/" class="logotype header__logotype">
+          <picture class="logotype__image">
+            <source srcset="img/logo.svg" type="image/svg+xml">
+            <source srcset="img/logo.png" type="image/png">
+            <img src="img/logo.svg" alt="Автосалон">
+          </picture>
+        </a>
+
+        <nav class="nav header__nav" id="header__nav">
+          <div class="search nav__search">
+            <form action="#?" class="search__form">
+              <div class="search__field">
+                <span class="icon search__field-icon">
+                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M21 21L17.5001 17.5M20 11.5C20 16.1944 16.1944 20 11.5 20C6.80558 20 3 16.1944 3 11.5C3 6.80558 6.80558 3 11.5 3C16.1944 3 20 6.80558 20 11.5Z"
+                      stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <input type="text" class="search__input" placeholder="Поиск по марке">
+              </div>
+            </form>
+          </div>
+          <ul class="nav__list header__nav-list">
+            <li class="nav__item header__nav-item">
+              <a href="#?" class="nav__link header__nav-link">
+                Главная
+              </a>
+            </li>
+            <li class="nav__item header__nav-item">
+              <a href="#?" class="nav__link nav__link--active header__nav-link">
+                Каталог
+              </a>
+            </li>
+            <li class="nav__item header__nav-item">
+              <a href="#?" class="nav__link header__nav-link">
+                Автокредит
+              </a>
+            </li>
+            <li class="nav__item header__nav-item">
+              <a href="#?" class="nav__link header__nav-link">
+                Trade-in
+              </a>
+            </li>
+            <li class="nav__item header__nav-item">
+              <a href="#?" class="nav__link header__nav-link">
+                Выкуп
+              </a>
+            </li>
+            <li class="nav__item header__nav-item">
+              <a href="#?" class="nav__link header__nav-link">
+                Акции
+              </a>
+            </li>
+            <li class="nav__item header__nav-item">
+              <a href="#?" class="nav__link header__nav-link">
+                Контакты
+              </a>
+            </li>
+          </ul>
+
+          <div class="nav__bottom">
+            <p class="header__contact">
+              <span class="icon header__contact-icon">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.00002 8.66671C9.10459 8.66671 10 7.77128 10 6.66671C10 5.56214 9.10459 4.66671 8.00002 4.66671C6.89545 4.66671 6.00002 5.56214 6.00002 6.66671C6.00002 7.77128 6.89545 8.66671 8.00002 8.66671Z"
+                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M8.00002 14.6667C10.6667 12 13.3334 9.61223 13.3334 6.66671C13.3334 3.72119 10.9455 1.33337 8.00002 1.33337C5.0545 1.33337 2.66669 3.72119 2.66669 6.66671C2.66669 9.61223 5.33335 12 8.00002 14.6667Z"
+                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+              Новосибирск, ул. Дунаевского, 25/1
+            </p>
+            <p class="header__contact">
+              <span class="icon header__contact-icon">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_8_354)">
+                    <path
+                      d="M8 4.00004V8.00004L10.6667 9.33337M14.6667 8.00004C14.6667 11.6819 11.6819 14.6667 8 14.6667C4.3181 14.6667 1.33334 11.6819 1.33334 8.00004C1.33334 4.31814 4.3181 1.33337 8 1.33337C11.6819 1.33337 14.6667 4.31814 14.6667 8.00004Z"
+                      stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_8_354">
+                      <rect width="16" height="16" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
+              Ежедневно с 9:00 до 20:00
+            </p>
+          </div>
+        </nav>
+
+        <div class="search header__search">
+          <form action="#?" class="search__form">
+            <div class="search__field">
+              <span class="icon search__field-icon">
+                <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M21 21L17.5001 17.5M20 11.5C20 16.1944 16.1944 20 11.5 20C6.80558 20 3 16.1944 3 11.5C3 6.80558 6.80558 3 11.5 3C16.1944 3 20 6.80558 20 11.5Z"
+                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+              <input type="text" class="search__input" placeholder="Поиск по марке">
+            </div>
+          </form>
+        </div>
+
+        <button class="btn header__btn" data-modal="#callback_modal" type="button">
+          Связаться
+        </button>
+
+        <a href="tel:79999999999" class="header__phone">
+          <span class="icon header__phone-icon">
+            <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.0497 6C15.0264 6.19057 15.924 6.66826 16.6277 7.37194C17.3314 8.07561 17.8091 8.97326 17.9997 9.95M14.0497 2C16.0789 2.22544 17.9713 3.13417 19.4159 4.57701C20.8606 6.01984 21.7717 7.91101 21.9997 9.94M10.2266 13.8631C9.02506 12.6615 8.07627 11.3028 7.38028 9.85323C7.32041 9.72854 7.29048 9.66619 7.26748 9.5873C7.18576 9.30695 7.24446 8.96269 7.41447 8.72526C7.46231 8.65845 7.51947 8.60129 7.63378 8.48698C7.98338 8.13737 8.15819 7.96257 8.27247 7.78679C8.70347 7.1239 8.70347 6.26932 8.27247 5.60643C8.15819 5.43065 7.98338 5.25585 7.63378 4.90624L7.43891 4.71137C6.90747 4.17993 6.64174 3.91421 6.35636 3.76987C5.7888 3.4828 5.11854 3.4828 4.55098 3.76987C4.2656 3.91421 3.99987 4.17993 3.46843 4.71137L3.3108 4.86901C2.78117 5.39863 2.51636 5.66344 2.31411 6.02348C2.08969 6.42298 1.92833 7.04347 1.9297 7.5017C1.93092 7.91464 2.01103 8.19687 2.17124 8.76131C3.03221 11.7947 4.65668 14.6571 7.04466 17.045C9.43264 19.433 12.295 21.0575 15.3284 21.9185C15.8928 22.0787 16.1751 22.1588 16.588 22.16C17.0462 22.1614 17.6667 22 18.0662 21.7756C18.4263 21.5733 18.6911 21.3085 19.2207 20.7789L19.3783 20.6213C19.9098 20.0898 20.1755 19.8241 20.3198 19.5387C20.6069 18.9712 20.6069 18.3009 20.3198 17.7333C20.1755 17.448 19.9098 17.1822 19.3783 16.6508L19.1835 16.4559C18.8339 16.1063 18.6591 15.9315 18.4833 15.8172C17.8204 15.3862 16.9658 15.3862 16.3029 15.8172C16.1271 15.9315 15.9523 16.1063 15.6027 16.4559C15.4884 16.5702 15.4313 16.6274 15.3644 16.6752C15.127 16.8453 14.7828 16.904 14.5024 16.8222C14.4235 16.7992 14.3612 16.7693 14.2365 16.7094C12.7869 16.0134 11.4282 15.0646 10.2266 13.8631Z"
+                stroke="#2E58DB" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- /.header -->
+  <main class="main">
+    <section class="breadcrumbs">
+      <div class="container breadcrumbs__container">
+        <div class="breadcrumbs__overflow">
+          <ul class="breadcrumbs__list" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+              <a href="#?" class="breadcrumbs__link" itemprop="url">
+                <span class="breadcrumbs__title" itemprop="title">Главная</span>
+              </a>
+            </li>
+            <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+              <a href="#?" class="breadcrumbs__link" itemprop="url">
+                <span class="breadcrumbs__title" itemprop="title">Каталог</span>
+              </a>
+            </li>
+            <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+              <a href="#?" class="breadcrumbs__link" itemprop="url">
+                <span class="breadcrumbs__title" itemprop="title">Haval</span>
+              </a>
+            </li>
+            <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+              <span class="breadcrumbs__page">
+                Jolion
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- /.breadcrumbs -->
+
+    <section class="product">
+      <div class="container product__container">
+        <div class="product__top">
+          <h1 class="title product__title">
+            Haval Jolion
+
+            <small>в Новосибирске</small>
+
+          </h1>
+          <span class="product__avail">
+            4 автомобиля в наличии
+          </span>
+        </div>
+        <!-- /.product__top -->
+        <div class="product__content">
+          <div class="product__side">
+            <div class="product__preview">
+              <span class="badge product__badge badge--sale">
+                -30%
+              </span>
+              <img src="img/avto.png" alt="Haval Jolion" class="product__image">
+              <div class="product__caption">
+                <span class="product__caption-prop">Цвет</span>
+                <p class="product__caption-color">Благородный агат</p>
+              </div>
+            </div>
+            <!-- /.product__preview -->
+            <ul class="product__colors">
+              <li class="product__color">
+                <a href="#?" class="product__color-link product__color-link--active" style="--color: #E0E0E0">
+                  &nbsp;
+                </a>
+              </li>
+              <li class="product__color">
+                <a href="#?" class="product__color-link" style="--color: #000000">
+                  &nbsp;
+                </a>
+              </li>
+              <li class="product__color">
+                <a href="#?" class="product__color-link" style="--color: #FFFFFF">
+                  &nbsp;
+                </a>
+              </li>
+              <li class="product__color">
+                <a href="#?" class="product__color-link" style="--color: #AAC5F0">
+                  &nbsp;
+                </a>
+              </li>
+              <li class="product__color">
+                <a href="#?" class="product__color-link" style="--color: #C31313">
+                  &nbsp;
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.product__side -->
+          <div class="product__info">
+            <ul class="product__props">
+              <li class="product__prop">
+                <span class="icon product__prop-icon">
+                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M13 2L4.09347 12.6879C3.74466 13.1064 3.57026 13.3157 3.56759 13.4925C3.56528 13.6461 3.63375 13.7923 3.75327 13.8889C3.89076 14 4.16319 14 4.70805 14H12L11 22L19.9066 11.3121C20.2554 10.8936 20.4298 10.6843 20.4324 10.5075C20.4348 10.3539 20.3663 10.2077 20.2468 10.1111C20.1093 10 19.8368 10 19.292 10H12L13 2Z"
+                      stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <p class="product__prop-title">
+                  Мощность
+                </p>
+                <strong class="product__prop-value">
+                  249 Л.С.
+                </strong>
+              </li>
+              <li class="product__prop">
+                <span class="icon product__prop-icon">
+                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5 12C5 8.13401 8.13401 5 12 5M16.4999 7.5L11.9999 12M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12C11 11.4477 11.4477 11 12 11C12.5523 11 13 11.4477 13 12Z"
+                      stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <p class="product__prop-title">
+                  Объем двигателя
+                </p>
+                <strong class="product__prop-value">
+                  2,0 Л
+                </strong>
+              </li>
+              <li class="product__prop">
+                <span class="icon product__prop-icon">
+                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12 21.5C13.8565 21.5 15.637 20.7625 16.9497 19.4497C18.2625 18.137 19 16.3565 19 14.5C19 12.5 18 10.6 16 9C14 7.4 12.5 5 12 2.5C11.5 5 10 7.4 8 9C6 10.6 5 12.5 5 14.5C5 16.3565 5.7375 18.137 7.05025 19.4497C8.36301 20.7625 10.1435 21.5 12 21.5Z"
+                      stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <p class="product__prop-title">
+                  Расход
+                </p>
+                <strong class="product__prop-value">
+                  8,2 Л
+                </strong>
+              </li>
+              <li class="product__prop">
+                <span class="icon product__prop-icon">
+                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M7 8L7 3L5 3L5 8H7ZM8 3C8 2.44772 7.55228 2 7 2H5C4.44772 2 4 2.44772 4 3V8C4 8.55228 4.44772 9 5 9H7C7.55228 9 8 8.55228 8 8L8 6.5H11.5L11.5 17.5H8V16C8 15.4477 7.55228 15 7 15H5C4.44772 15 4 15.4477 4 16V21C4 21.5523 4.44772 22 5 22H7C7.55228 22 8 21.5523 8 21L8 18.5H16V21C16 21.5523 16.4477 22 17 22H19C19.5523 22 20 21.5523 20 21V16C20 15.4477 19.5523 15 19 15H17C16.4477 15 16 15.4477 16 16V17.5H12.5L12.5 6.5H16V8C16 8.55228 16.4477 9 17 9H19C19.5523 9 20 8.55228 20 8V3C20 2.44772 19.5523 2 19 2H17C16.4477 2 16 2.44772 16 3V5.5H8V3ZM17 3L19 3V8H17V3ZM7 21L7 16H5L5 21H7ZM17 16H19V21H17V16Z"
+                      fill="currentColor" />
+                  </svg>
+                </span>
+                <p class="product__prop-title">
+                  Привод
+                </p>
+                <strong class="product__prop-value">
+                  Полный
+                </strong>
+              </li>
+            </ul>
+            <!-- /.product__props -->
+
+            <div class="product__params">
+              <label class="checkbox product__checkbox">
+                <input type="checkbox" name="name1">
+                <span class="checkbox__icon"></span>
+                <p class="checkbox__content">
+                  <span class="checkbox__text">Скидка по Traid-in</span>
+                  <span class="checkbox__price">-170 000 ₽</span>
+                </p>
+              </label>
+              <label class="checkbox product__checkbox">
+                <input type="checkbox" name="name2" checked>
+                <span class="checkbox__icon"></span>
+                <p class="checkbox__content">
+                  <span class="checkbox__text">Покупка в кредит</span>
+                  <span class="checkbox__price">-250 000 ₽</span>
+                </p>
+              </label>
+              <label class="checkbox product__checkbox">
+                <input type="checkbox" name="name3" checked>
+                <span class="checkbox__icon"></span>
+                <p class="checkbox__content">
+                  <span class="checkbox__text">Скидка по программе утилизации</span>
+                  <span class="checkbox__price">-80 000 ₽</span>
+                </p>
+              </label>
+              <div class="product__params-total">
+                <span class="product__params-text">Ваша выгода</span>
+                <strong class="product__params-price">330 000 ₽</strong>
+              </div>
+            </div>
+            <!-- /.product__params -->
+
+            <div class="product__price">
+              <strong class="product__price-main">
+                от 7 070 000 ₽
+              </strong>
+              <span class="product__price-credit">
+                В кредит от 89 000 ₽/мес
+              </span>
+              <p class="product__price-total">
+                Цена без учета скидки: от 7 400 000 ₽
+              </p>
+            </div>
+            <!-- /.product__price -->
+
+            <div class="product__info-footer">
+              <button class="btn btn--alt product__btn" data-modal="#callback_modal" type="button">
+                Забронировать
+              </button>
+              <button class="btn product__btn" data-modal="#callback_modal" type="button">
+                Купить в кредит
+              </button>
+            </div>
+          </div>
+          <!-- /.product__info -->
+        </div>
+      </div>
+    </section>
+    <!-- /.product -->
+
+    <section class="credit">
+      <div class="container credit__container">
+        <h1 class="title credit__title">
+          Рассчитайте условия по кредиту на Haval Jolion
+
+        </h1>
+
+        <div class="credit-calc">
+          <div class="credit-calc__left">
+            <div class="credit-calc__label">
+              <span class="credit-calc__label-text">Сумма кредита</span>
+              <strong class="credit-calc__label-price">7 070 000 ₽</strong>
+            </div>
+            <div class="credit__field">
+              <div class="credit__field-wrap">
+                <span class="credit__field-label">
+                  Первоначальный взнос
+                </span>
+                <input type="text" class="credit__field-input" id="noui_credit_input">
+                <div class="credit__slider credit__nouislider" id="noui_credit"></div>
+              </div>
+              <p class="credit__field-ranges">
+                <span>0%</span>
+                <span>90%</span>
+              </p>
+            </div>
+            <div class="credit__field">
+              <div class="credit__field-wrap">
+                <span class="credit__field-label">
+                  Срок кредита
+                </span>
+                <input type="text" class="credit__field-input" id="noui_month_input">
+                <div class="credit__slider credit__nouislider" id="noui_month"></div>
+              </div>
+              <p class="credit__field-ranges">
+                <span>6 мес.</span>
+                <span>8 лет</span>
+              </p>
+            </div>
+          </div>
+          <div class="credit-calc__right">
+            <div class="credit-calc__info">
+              <strong class="credit-calc__title">Наше предложение</strong>
+
+              <div class="credit-calc__param">
+                <span class="credit-calc__param-label">Ежемесячный платеж</span>
+
+                <div class="counter credit-calc__counter">
+                  <button type="button" class="counter__btn" data-counter="minus">
+                    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 12H19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                  <input type="hidden" class="counter__input" value="30000" data-counter="field"
+                    data-counter-step="5000" data-counter-currency="₽">
+                  <strong class="counter__result" data-counter="result">30 000 ₽</strong>
+                  <button type="button" class="counter__btn" data-counter="plus">
+                    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 5V19M5 12H19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="memo credit-calc__memo">
+                <span class="memo__icon">
+                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12 16V11M12 8H11.99M2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12Z"
+                      stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <p class="memo__text">Расчет носит инфомационный характер, не является публичной офертой</p>
+              </div>
+
+              <button class="btn credit-calc__btn" data-modal="#callback_modal" type="button">
+                Купить в кредит
+              </button>
+            </div>
+            <div class="memo credit-calc__memo credit-calc__memo--mobile">
+              <span class="memo__icon">
+                <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 16V11M12 8H11.99M2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12Z"
+                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+              <p class="memo__text">Расчет носит инфомационный характер, не является публичной офертой</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.credit -->
+
+    <section class="comparison">
+      <div class="comparison-top">
+        <div class="container comparison__container">
+          <h1 class="title comparison__title">
+            Сравнение комплектаций Haval Jolion
+
+            <small>(12)</small>
+
+          </h1>
+
+          <div class="comparison__splide splide">
+            <div class="splide__slider">
+              <div class="splide__arrows comparison__arrows">
+                <button class="splide__arrow hello__arrow splide__arrow--prev">
+                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 12L10 8L10 16L14 12Z" fill="currentColor" />
+                  </svg>
+                </button>
+                <button class="splide__arrow hello__arrow splide__arrow--next">
+                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 12L10 8L10 16L14 12Z" fill="currentColor" />
+                  </svg>
+                </button>
+              </div>
+              <div class="splide__track">
+                <div class="splide__list">
+                  <div class="splide__slide">
+                    <div class="comparison-card">
+                      <a href="#?" class="comparison-card__close">
+                        <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path d="M17 7L7 17M7 7L17 17" stroke="#646970" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                      </a>
+                      <strong class="comparison-card__title">
+                        Classic Audio 1.6 л. 6АКПП (123 л.с.) FWD
+                      </strong>
+                      <div class="comparison-card__bottom">
+                        <strong class="comparison-card__price">
+                          от 7 400 000 ₽
+                        </strong>
+                        <button class="btn comparison__btn" data-modal="#callback_modal" type="button">
+                          Отправить заявку
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="splide__slide">
+                    <div class="comparison-card">
+                      <a href="#?" class="comparison-card__close">
+                        <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path d="M17 7L7 17M7 7L17 17" stroke="#646970" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                      </a>
+                      <a href="#?" class="comparison-card__title">
+                        Classic Audio 1.6 л. 6АКПП (123 л.с.) FWD
+                      </a>
+                      <div class="comparison-card__bottom">
+                        <strong class="comparison-card__price">
+                          от 7 400 000 ₽
+                        </strong>
+                        <button class="btn comparison__btn" data-modal="#callback_modal" type="button">
+                          Отправить заявку
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="splide__slide">
+                    <div class="comparison-card">
+                      <a href="#?" class="comparison-card__close">
+                        <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path d="M17 7L7 17M7 7L17 17" stroke="#646970" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                      </a>
+                      <a href="#?" class="comparison-card__title">
+                        Classic Audio 1.6 л. 6АКПП (123 л.с.) FWD
+                      </a>
+                      <div class="comparison-card__bottom">
+                        <strong class="comparison-card__price">
+                          от 7 400 000 ₽
+                        </strong>
+                        <button class="btn comparison__btn" data-modal="#callback_modal" type="button">
+                          Отправить заявку
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="splide__slide">
+                    <div class="comparison-card">
+                      <a href="#?" class="comparison-card__close">
+                        <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path d="M17 7L7 17M7 7L17 17" stroke="#646970" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                      </a>
+                      <a href="#?" class="comparison-card__title">
+                        Classic Audio 1.6 л. 6АКПП (123 л.с.) FWD
+                      </a>
+                      <div class="comparison-card__bottom">
+                        <strong class="comparison-card__price">
+                          от 7 400 000 ₽
+                        </strong>
+                        <button class="btn comparison__btn" data-modal="#callback_modal" type="button">
+                          Отправить заявку
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="splide__slide">
+                    <div class="comparison-card">
+                      <a href="#?" class="comparison-card__close">
+                        <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path d="M17 7L7 17M7 7L17 17" stroke="#646970" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                      </a>
+                      <a href="#?" class="comparison-card__title">
+                        Classic Audio 1.6 л. 6АКПП (123 л.с.) FWD
+                      </a>
+                      <div class="comparison-card__bottom">
+                        <strong class="comparison-card__price">
+                          от 7 400 000 ₽
+                        </strong>
+                        <button class="btn comparison__btn" data-modal="#callback_modal" type="button">
+                          Отправить заявку
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="splide__slide"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="comparison-content">
+        <div class="container comparison__container">
+          <div class="accordion comparison-accordion" data-accordion-parent>
+            <div class="accordion__card --is_active" id="card_1">
+              <div class="accordion__card-header">
+                <button class="accordion__card-toggler --is_active" data-accordion-toggler="#card_1">
+                  Безопасность
+                  <span class="accordion__card-arrow">
+                    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 10L8 14L16 14L12 10Z" fill="currentColor" />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <div class="accordion__card-body" data-accordion-body="" style="max-height: none;">
+                <div class="accordion__card-content">
+                  <div class="comparison__params">
+                    <div class="comparison__param">
+                      <p class="comparison__param-label">
+                        Крепления для детского кресла ISOFIX
+                      </p>
+                      <div class="comparison__param-splide splide" id="comparison__param-1">
+                        <div class="splide__slider">
+                          <div class="splide__track">
+                            <div class="splide__list">
+                              <div class="splide__slide">
+                                <div class="comparison__param-value comparison__param-value--unavail">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_139)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_139">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide">
+                                <div class="comparison__param-value">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_143)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M12 5V19M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_143">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide">
+                                <div class="comparison__param-value">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_143)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M12 5V19M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_143">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide">
+                                <div class="comparison__param-value">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_143)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M12 5V19M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_143">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide">
+                                <div class="comparison__param-value comparison__param-value--unavail">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_139)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_139">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="comparison__param">
+                      <p class="comparison__param-label">
+                        Крепления для детского кресла ISOFIX
+                      </p>
+                      <div class="comparison__param-splide splide" id="comparison__param-2">
+                        <div class="splide__slider">
+                          <div class="splide__track">
+                            <div class="splide__list">
+                              <div class="splide__slide">
+                                <div class="comparison__param-value">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_143)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M12 5V19M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_143">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide">
+                                <div class="comparison__param-value">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_143)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M12 5V19M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_143">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide">
+                                <div class="comparison__param-value">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_143)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M12 5V19M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_143">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide">
+                                <div class="comparison__param-value">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_143)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M12 5V19M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_143">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide">
+                                <div class="comparison__param-value comparison__param-value--unavail">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_139)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_139">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="comparison__param">
+                      <p class="comparison__param-label">
+                        Система предупреждения бокового столкновения при выезде с парковки задним ходом (RCCW)
+                      </p>
+                      <div class="comparison__param-splide splide" id="comparison__param-3">
+                        <div class="splide__slider">
+                          <div class="splide__track">
+                            <div class="splide__list">
+                              <div class="splide__slide">
+                                <div class="comparison__param-value comparison__param-value--unavail">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_139)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_139">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide">
+                                <div class="comparison__param-value">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_143)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M12 5V19M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_143">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide">
+                                <div class="comparison__param-value">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_143)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M12 5V19M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_143">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide">
+                                <div class="comparison__param-value">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_143)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M12 5V19M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_143">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide">
+                                <div class="comparison__param-value comparison__param-value--unavail">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_139)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_139">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="comparison__param">
+                      <p class="comparison__param-label">
+                        Крепления для детского кресла ISOFIX
+                      </p>
+                      <div class="comparison__param-splide splide" id="comparison__param-4">
+                        <div class="splide__slider">
+                          <div class="splide__track">
+                            <div class="splide__list">
+                              <div class="splide__slide">
+                                <div class="comparison__param-value">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_143)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M12 5V19M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_143">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide">
+                                <div class="comparison__param-value comparison__param-value--unavail">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_139)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_139">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide">
+                                <div class="comparison__param-value">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_143)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M12 5V19M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_143">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide">
+                                <div class="comparison__param-value">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_143)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M12 5V19M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_143">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide">
+                                <div class="comparison__param-value comparison__param-value--unavail">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_139)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_139">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="comparison__param">
+                      <p class="comparison__param-label">
+                        Крепления для детского кресла ISOFIX
+                      </p>
+                      <div class="comparison__param-splide splide" id="comparison__param-5">
+                        <div class="splide__slider">
+                          <div class="splide__track">
+                            <div class="splide__list">
+                              <div class="splide__slide">
+                                <div class="comparison__param-value comparison__param-value--unavail">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_139)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_139">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide">
+                                <div class="comparison__param-value">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_143)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M12 5V19M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_143">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide">
+                                <div class="comparison__param-value">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_143)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M12 5V19M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_143">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide">
+                                <div class="comparison__param-value">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_143)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M12 5V19M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_143">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide">
+                                <div class="comparison__param-value comparison__param-value--unavail">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_139)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_139">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="comparison__param">
+                      <p class="comparison__param-label">
+                        Запасное колесо временного использования
+                      </p>
+                      <div class="comparison__param-splide splide" id="comparison__param-6">
+                        <div class="splide__slider">
+                          <div class="splide__track">
+                            <div class="splide__list">
+                              <div class="splide__slide">
+                                <div class="comparison__param-value">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_143)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M12 5V19M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_143">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide">
+                                <div class="comparison__param-value">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_143)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M12 5V19M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_143">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide">
+                                <div class="comparison__param-value">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_143)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M12 5V19M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_143">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide">
+                                <div class="comparison__param-value">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_143)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M12 5V19M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_143">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide">
+                                <div class="comparison__param-value comparison__param-value--unavail">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_139)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_139">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="comparison__param">
+                      <p class="comparison__param-label">
+                        Иммобилайзер
+                      </p>
+                      <div class="comparison__param-splide splide" id="comparison__param-7">
+                        <div class="splide__slider">
+                          <div class="splide__track">
+                            <div class="splide__list">
+                              <div class="splide__slide">
+                                <div class="comparison__param-value comparison__param-value--unavail">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_139)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_139">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide">
+                                <div class="comparison__param-value">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_143)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M12 5V19M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_143">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide">
+                                <div class="comparison__param-value comparison__param-value--unavail">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_139)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_139">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide">
+                                <div class="comparison__param-value">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_143)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M12 5V19M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_143">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide">
+                                <div class="comparison__param-value comparison__param-value--unavail">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_139)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_139">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="comparison__param">
+                      <p class="comparison__param-label">
+                        Крепления для детского кресла ISOFIX
+                      </p>
+                      <div class="comparison__param-splide splide" id="comparison__param-8">
+                        <div class="splide__slider">
+                          <div class="splide__track">
+                            <div class="splide__list">
+                              <div class="splide__slide">
+                                <div class="comparison__param-value comparison__param-value--unavail">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_139)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_139">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide">
+                                <div class="comparison__param-value">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_143)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M12 5V19M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_143">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide">
+                                <div class="comparison__param-value">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_143)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M12 5V19M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_143">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide">
+                                <div class="comparison__param-value">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_143)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M12 5V19M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_143">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide">
+                                <div class="comparison__param-value comparison__param-value--unavail">
+                                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_41_139)">
+                                      <rect width="24" height="24" rx="12" fill="currentColor" />
+                                      <path d="M5 12H19" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_41_139">
+                                        <rect width="24" height="24" rx="12" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="splide__slide"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.comparison -->
+  </main>
+  <!-- /.main -->
+  <footer class="footer">
+
+  </footer>
+  <!-- /.footer -->
+
+  <!-- Libs scripts -->
+  <script src="libs/splide/splide.min.js?_v=20240917154248"></script>
+  <script src="libs/nouislider/nouislider.min.js?_v=20240917154248"></script>
+  <!-- Main scripts -->
+  <script src="js/main-script.min.js?_v=20240917154248"></script>
+</body>
+
+</html>
